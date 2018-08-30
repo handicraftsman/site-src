@@ -1,0 +1,95 @@
+<mat-card class="site-card">
+  <mat-card-title>
+    IRC Bots
+  </mat-card-title>
+  <mat-card-content>
+    <p>
+      I've written multiple IRC bots in various languages. My latest
+      (and one of most stable) bot is ParticleBot2.
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="site-card">
+  <mat-card-title>
+    ParticleBot2
+  </mat-card-title>
+  <mat-card-content>
+    <p>
+      ParticleBot2 is written in C++ and supports serving channels in multiple
+      IRC networks and extending using C++ plugins.
+    </p>
+
+    <p>
+      ParticleBot2 depends on Guosh, ParticleDI, ParticleINI, SQLite3 and CURL.
+    </p>
+
+    <p>
+      Optional dependencies include libxml++ and jsoncpp.
+    </p>
+
+    <p>
+      Building:
+    </p>
+
+    <pre><code class="language-bash">{{ pb2build }}</code></pre>
+    
+    <p>
+      Example config (which loads all plugins and adds corresponding groups)
+    </p>
+
+    <pre><code class="language-ini">{{ pb2config }}</code></pre>
+
+    <p>
+      Starting:
+    </p>
+
+    <pre><code class="language-bash">{{ pb2starting }}</code></pre>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button color="primary" href="https://github.com/handicraftsman/particlebot2">
+      GitHub
+    </a>
+  </mat-card-actions>
+</mat-card>
+
+
+<mat-card class="site-card">
+  <mat-card-title>
+    Other bots
+  </mat-card-title>
+  <mat-card-content>
+    <p>
+      I have written some other bots. These may be unstable or partially unfinished.
+      This is the full list of them:
+    </p>
+
+    <mat-list>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/particlebot">ParticleBot</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/protonbot">ProtonBot</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/photonbot">PhotonBot</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/particlebot">ParticleBot</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/wuon">wuon</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/gluonbot">gluonbot</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/tinyirc">tinyirc</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="https://github.com/handicraftsman/electronbot">ElectronBot</a>        
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

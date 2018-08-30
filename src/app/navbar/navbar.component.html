@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="mat-elevation-z2 hide-on-small">
+  <button mat-button routerLink="/">
+    <img src="/favicon.png" height="32" style="margin-right: 4px; margin-bottom: 2px">
+    Home
+  </button>
+  <button *ngFor="let link of links" mat-button [routerLink]="link[1]">
+    {{ link[0] }}
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container style="position: static" clas class="show-on-small">
+  <mat-sidenav #sidenav mode="over" class="sidenav mat-elevation-z2 show-on-small">
+    <button mat-button routerLink="/" class="sidenav-btn">
+      <img src="/favicon.png" height="32" style="margin-right: 4px; margin-bottom: 2px">
+      Home
+    </button><br/>
+    <button *ngFor="let link of links" mat-button [routerLink]="link[1]" class="sidenav-btn">
+      {{ link[0] }}
+    </button>
+  </mat-sidenav>
+
+  <button
+    mat-fab
+    class="show-on-small"
+    style="z-index: 1000; position: fixed; bottom: 16px; right: 16px; color: white"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon aria-label="Show Sidebar">menu</mat-icon>
+  </button>
+</mat-sidenav-container>

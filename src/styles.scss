@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body { 
+  background-color: #F1F1F1;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #2f7b74;
+}
+
+.site-card {
+  max-width: 768px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.site-contact-item {
+  height: inherit !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.site-contact-item > .mat-list-item-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none !important;
+  }
+  .site-card:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .show-on-small {
+    display: none !important;
+  }
+}

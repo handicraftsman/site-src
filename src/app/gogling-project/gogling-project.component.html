@@ -1,0 +1,38 @@
+<mat-card class="site-card">
+  <mat-card-title>
+    Gogling
+  </mat-card-title>
+  <mat-card-content>
+    <p>
+      Gogling is an application server with Lua API I wrote back in 2016
+      and remade in August 2018. Simple example:
+    </p>
+
+    <pre><code class="language-lua">{{ example1 }}</code></pre>
+
+    <p>
+      This will reply to your requests to / with <code>Hello, World!</code>.
+    </p>
+    <p>
+      Current version is a full rewrite, but you still can access
+      old one at <code>development</code> and <code>updpack-into-package</code>
+      branches
+    </p>
+    <p>
+      Gogling supports importing prebuilt (as plugins) Golang's standard library.
+      To build it, you must have ruby, bash and go.
+    </p>
+
+    <pre><code class="language-bash">{{ example2 }}</code></pre>
+
+    <p>
+      Now you can find built standard library as a set of plugins.
+      (warning: they take ~860 MB on your disk so you shouldn't push all of them to the server)
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button color="primary" href="https://github.com/handicraftsman/gogling">
+      GitHub
+    </a>
+  </mat-card-actions>
+</mat-card>
